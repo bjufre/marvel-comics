@@ -46,9 +46,11 @@ cd marvel-comics
 If what you want is to see the application in action, run:
 ```bash
 # NPM users
+npm install
 npm run start
 
 # Yarn users
+yarn
 yarn start
 ```
 
