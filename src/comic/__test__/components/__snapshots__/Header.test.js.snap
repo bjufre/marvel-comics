@@ -1,0 +1,112 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Header renders all the correct properties 1`] = `
+<Header
+  comic={
+    Object {
+      "characters": Object {
+        "available": 0,
+        "collectionURI": "http://gateway.marvel.com/v1/public/comics/16961/characters",
+        "items": Array [],
+        "returned": 0,
+      },
+      "collectedIssues": Array [],
+      "collections": Array [],
+      "creators": Object {
+        "available": 0,
+        "collectionURI": "http://gateway.marvel.com/v1/public/comics/16961/creators",
+        "items": Array [],
+        "returned": 0,
+      },
+      "dates": Array [
+        Object {
+          "date": "-0001-11-30T00:00:00-0500",
+          "type": "onsaleDate",
+        },
+        Object {
+          "date": "-0001-11-30T00:00:00-0500",
+          "type": "focDate",
+        },
+      ],
+      "description": null,
+      "diamondCode": "",
+      "digitalId": 0,
+      "ean": "",
+      "events": Object {
+        "available": 0,
+        "collectionURI": "http://gateway.marvel.com/v1/public/comics/16961/events",
+        "items": Array [],
+        "returned": 0,
+      },
+      "format": "Comic",
+      "id": 16961,
+      "images": Array [],
+      "isbn": "",
+      "issn": "",
+      "issueNumber": 134,
+      "modified": "-0001-11-30T00:00:00-0500",
+      "pageCount": 0,
+      "price": "0$",
+      "prices": Array [
+        Object {
+          "price": 0,
+          "type": "printPrice",
+        },
+      ],
+      "resourceURI": "http://gateway.marvel.com/v1/public/comics/16961",
+      "series": Object {
+        "name": "Rawhide Kid (1960 - 1979)",
+        "resourceURI": "http://gateway.marvel.com/v1/public/series/2988",
+      },
+      "stories": Object {
+        "available": 2,
+        "collectionURI": "http://gateway.marvel.com/v1/public/comics/16961/stories",
+        "items": Array [
+          Object {
+            "name": "",
+            "resourceURI": "http://gateway.marvel.com/v1/public/stories/35583",
+            "type": "",
+          },
+          Object {
+            "name": "Rawhide Kid 134 cover",
+            "resourceURI": "http://gateway.marvel.com/v1/public/stories/67628",
+            "type": "cover",
+          },
+        ],
+        "returned": 2,
+      },
+      "textObjects": Array [],
+      "thumbnail": "http://i.annihil.us/u/prod/marvel/i/mg/b/40/image_not_available/portrait_uncanny.jpg",
+      "title": "Rawhide Kid",
+      "upc": "",
+      "urls": Array [
+        Object {
+          "type": "detail",
+          "url": "http://marvel.com/comics/issue/16961/rawhide_kid_1960_134?utm_campaign=apiRef&utm_source=a1af9305675ac96b2505d95b4d442607",
+        },
+      ],
+      "variantDescription": "",
+      "variants": Array [],
+      "year": "1960",
+    }
+  }
+>
+  <header>
+    <div
+      className="top"
+    >
+      <h1>
+        Rawhide Kid
+         #
+        134
+      </h1>
+      <p>
+        1960
+      </p>
+    </div>
+    <p>
+      0$
+    </p>
+  </header>
+</Header>
+`;

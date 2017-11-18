@@ -1,0 +1,29 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Loading renders all the correct properties 1`] = `
+<div
+  className="marvel-comics-loading"
+>
+  <Loading
+    color="#ED1D24"
+    delay={1000}
+    height={64}
+    type="bars"
+    width="90px"
+  />
+</div>
+`;
+
+exports[`Loading sets the class to active when loading is true 1`] = `
+<div
+  className="marvel-comics-loading active"
+>
+  <Loading
+    color="#ED1D24"
+    delay={1000}
+    height={64}
+    type="bars"
+    width="90px"
+  />
+</div>
+`;

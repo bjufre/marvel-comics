@@ -1,0 +1,64 @@
+#marvel-comic-list
+  display: grid
+  justify-content: center
+  grid-row-gap: 40px
+  grid-column-gap: 40px
+  grid-template-columns: 1fr 1fr
+
+  // height: calc(100vh - 90px)
+  height: 100vh
+  overflow-y: scroll
+  padding-bottom: 80px
+
+  background-color: #0B0C1A
+
+  +for-size(tablet-portrait-up)
+    grid-template-columns: 1fr 1fr 1fr
+
+  +for-size(tablet-landscape-up)
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr
+
+  +for-size(desktop-up)
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr
+
+  +for-size(big-desktop-up)
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr
+
+  .marvel-comics-comic-item
+
+    &:hover .comic-item-image
+      +scale(1.05)
+
+    .comic-item-image
+      position: relative
+      width: 100%
+      margin-bottom: 20px
+      +transition(all .4s ease)
+
+      img
+        width: 100%
+
+    .comic-item-title
+      // font-size: 1.25em
+      font-family: Barlow Condensed, sans-serif
+      font-size: 1.2em
+      font-weight: 600
+      text-transform: uppercase
+      text-overflow: ellipsis
+      margin-bottom: 10px
+      letter-spacing: .1px
+      // font-family: Pragati Narrow, sans-serif
+
+      // +for-size(big-desktop-up)
+      //   font-size: 36px
+
+    .comic-item-meta
+      +display-flex()
+      justify-content: space-between
+      align-items: center
+
+      +opacity(.7)
+
+      p
+        font-size: .9em
+        font-weight: 400

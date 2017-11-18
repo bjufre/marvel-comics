@@ -1,0 +1,56 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`fetchComicEpic should call FETCH_COMIC_FAILURE when the request fails 1`] = `
+Array [
+  Object {
+    "comicId": 1,
+    "message": "Test error",
+    "type": "@@marvel-comics/FETCH_COMIC_FAILURE",
+  },
+]
+`;
+
+exports[`fetchComicEpic should fetch the comic 1`] = `
+Array [
+  Object {
+    "comicId": 1,
+    "response": Object {
+      "1": Object {
+        "characters": Array [
+          Object {
+            "id": 1,
+            "prices": Array [
+              Object {
+                "price": 0,
+              },
+            ],
+            "title": "Spiderman (1998) #13",
+          },
+        ],
+        "creators": Array [
+          Object {
+            "id": 1,
+            "prices": Array [
+              Object {
+                "price": 0,
+              },
+            ],
+            "title": "Spiderman (1998) #13",
+          },
+        ],
+        "id": 1,
+        "price": "0$",
+        "prices": Array [
+          Object {
+            "price": 0,
+          },
+        ],
+        "thumbnail": "http://i.annihil.us/u/prod/marvel/i/mg/b/40/image_not_available/portrait_uncanny.jpg",
+        "title": "Spiderman",
+        "year": "1998",
+      },
+    },
+    "type": "@@marvel-comics/FETCH_COMIC_SUCCESS",
+  },
+]
+`;

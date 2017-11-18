@@ -1,0 +1,17 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`ChunkWrapper renders all the correct properties 1`] = `
+<div
+  className="Yeah-wrapper"
+>
+  <div
+    key="Yeah-chunk-0"
+  >
+    <p
+      key="Test"
+    >
+      Test
+    </p>
+  </div>
+</div>
+`;
