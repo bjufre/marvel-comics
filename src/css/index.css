@@ -1,0 +1,384 @@
+@import url("https://fonts.googleapis.com/css?family=Roboto:300,400,700");
+@import url("https://fonts.googleapis.com/css?family=Barlow+Condensed:400,600,700,800");
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font: inherit;
+  font-size: 100%;
+  vertical-align: baseline; }
+
+html {
+  line-height: 1; }
+
+ol, ul {
+  list-style: none; }
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0; }
+
+caption, th, td {
+  text-align: left;
+  font-weight: normal;
+  vertical-align: middle; }
+
+q, blockquote {
+  quotes: none; }
+  q:before, q:after, blockquote:before, blockquote:after {
+    content: "";
+    content: none; }
+
+a img {
+  border: none; }
+
+elements-of-type(html5-block) {
+  display: block; }
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font: inherit;
+  font-size: 100%;
+  vertical-align: baseline; }
+
+html {
+  line-height: 1; }
+
+ol, ul {
+  list-style: none; }
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0; }
+
+caption, th, td {
+  text-align: left;
+  font-weight: normal;
+  vertical-align: middle; }
+
+q, blockquote {
+  quotes: none; }
+  q:before, q:after, blockquote:before, blockquote:after {
+    content: "";
+    content: none; }
+
+a img {
+  border: none; }
+
+elements-of-type(html5-block) {
+  display: block; }
+
+html,
+body,
+#root {
+  width: 100%;
+  height: 100%;
+  color: white;
+  font-family: Roboto, sans-serif;
+  font-weight: 300;
+  min-height: min-content; }
+  html::-webkit-scrollbar,
+  body::-webkit-scrollbar,
+  #root::-webkit-scrollbar {
+    display: none; }
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: Barlow Condensed, sans-serif;
+  font-weight: bold;
+  text-transform: uppercase; }
+
+p {
+  line-height: 1.618; }
+
+a {
+  color: inherit;
+  text-decoration: none; }
+
+.container {
+  padding: 40px;
+  padding-top: 130px; }
+
+.marvel-app {
+  width: 100%;
+  height: 100%; }
+  .marvel-app.detail {
+    overflow: hidden; }
+
+.marvel-comics-loading {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-align-items: center;
+  align-items: center;
+  -webkit-justify-content: center;
+  justify-content: center;
+  background-color: #070812;
+  filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=0);
+  opacity: 0;
+  pointer-events: none;
+  z-index: 9020; }
+  .marvel-comics-loading.active {
+    filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=100);
+    opacity: 1;
+    pointer-events: all; }
+  .marvel-comics-loading > div {
+    -webkit-transform: translateY(-80%);
+    -moz-transform: translateY(-80%);
+    -ms-transform: translateY(-80%);
+    -o-transform: translateY(-80%);
+    transform: translateY(-80%); }
+
+.marvel-header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 90px;
+  background-color: rgba(7, 8, 18, 0.98);
+  border-bottom: 1px solid #212445;
+  z-index: 8000;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-align-items: center;
+  align-items: center;
+  -webkit-justify-content: center;
+  justify-content: center; }
+  .marvel-header #marvel-logo {
+    max-width: 200px; }
+  .marvel-header.detail {
+    border: none;
+    background-color: transparent;
+    z-index: 9000; }
+
+#marvel-comic-list {
+  display: grid;
+  justify-content: center;
+  grid-row-gap: 40px;
+  grid-column-gap: 40px;
+  grid-template-columns: 1fr 1fr;
+  height: 100vh;
+  overflow-y: scroll;
+  padding-bottom: 80px;
+  background-color: #0B0C1A; }
+  @media (min-width: 600px) {
+    #marvel-comic-list {
+      grid-template-columns: 1fr 1fr 1fr; } }
+  @media (min-width: 900px) {
+    #marvel-comic-list {
+      grid-template-columns: 1fr 1fr 1fr 1fr 1fr; } }
+  @media (min-width: 1200px) {
+    #marvel-comic-list {
+      grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr; } }
+  @media (min-width: 1800px) {
+    #marvel-comic-list {
+      grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr; } }
+  #marvel-comic-list .marvel-comics-comic-item:hover .comic-item-image {
+    -webkit-transform: scale(1.05, 1.05);
+    -moz-transform: scale(1.05, 1.05);
+    -ms-transform: scale(1.05, 1.05);
+    -o-transform: scale(1.05, 1.05);
+    transform: scale(1.05, 1.05); }
+  #marvel-comic-list .marvel-comics-comic-item .comic-item-image {
+    position: relative;
+    width: 100%;
+    margin-bottom: 20px;
+    -webkit-transition: all 0.4s ease;
+    -moz-transition: all 0.4s ease;
+    -o-transition: all 0.4s ease;
+    transition: all 0.4s ease; }
+    #marvel-comic-list .marvel-comics-comic-item .comic-item-image img {
+      width: 100%; }
+  #marvel-comic-list .marvel-comics-comic-item .comic-item-title {
+    font-family: Barlow Condensed, sans-serif;
+    font-size: 1.2em;
+    font-weight: 600;
+    text-transform: uppercase;
+    text-overflow: ellipsis;
+    margin-bottom: 10px;
+    letter-spacing: .1px; }
+  #marvel-comic-list .marvel-comics-comic-item .comic-item-meta {
+    display: -webkit-flex;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=70);
+    opacity: 0.7; }
+    #marvel-comic-list .marvel-comics-comic-item .comic-item-meta p {
+      font-size: .9em;
+      font-weight: 400; }
+
+.marvel-comics-detail {
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  overflow-y: auto;
+  background-color: rgba(11, 12, 26, 0.98);
+  z-index: 8020; }
+  .marvel-comics-detail aside {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 100%; }
+    @media (min-width: 900px) {
+      .marvel-comics-detail aside {
+        position: fixed; } }
+    .marvel-comics-detail aside > div {
+      display: -webkit-flex;
+      display: flex;
+      -webkit-align-items: center;
+      align-items: center;
+      -webkit-justify-content: center;
+      justify-content: center;
+      -webkit-flex-direction: column;
+      flex-direction: column; }
+      @media (min-width: 900px) {
+        .marvel-comics-detail aside > div {
+          display: inherit !important; } }
+    @media (min-width: 900px) {
+      .marvel-comics-detail aside {
+        height: 100%;
+        width: 33.3333%; } }
+    .marvel-comics-detail aside img {
+      max-height: 320px;
+      -webkit-transform: translate(0, 110px);
+      -moz-transform: translate(0, 110px);
+      -ms-transform: translate(0, 110px);
+      -o-transform: translate(0, 110px);
+      transform: translate(0, 110px); }
+      @media (min-width: 900px) {
+        .marvel-comics-detail aside img {
+          max-height: 400px;
+          position: absolute;
+          top: 50%;
+          left: 0;
+          -webkit-transform: translate(-50%, -55%);
+          -moz-transform: translate(-50%, -55%);
+          -ms-transform: translate(-50%, -55%);
+          -o-transform: translate(-50%, -55%);
+          transform: translate(-50%, -55%); } }
+    .marvel-comics-detail aside #back-button {
+      position: absolute;
+      top: 110px;
+      right: 10px;
+      filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=70);
+      opacity: 0.7; }
+      @media (min-width: 600px) {
+        .marvel-comics-detail aside #back-button {
+          right: 40px; } }
+      @media (min-width: 900px) {
+        .marvel-comics-detail aside #back-button {
+          position: absolute;
+          top: 50%;
+          left: 50%;
+          -webkit-transform: translate(15%, -100%);
+          -moz-transform: translate(15%, -100%);
+          -ms-transform: translate(15%, -100%);
+          -o-transform: translate(15%, -100%);
+          transform: translate(15%, -100%); } }
+  .marvel-comics-detail main {
+    max-width: 100%;
+    position: relative;
+    padding: 20px;
+    padding-bottom: 40px;
+    padding-top: 460px;
+    overflow: hidden; }
+    @media (min-width: 900px) {
+      .marvel-comics-detail main {
+        width: 60%;
+        padding-right: 0;
+        padding-left: 40px;
+        padding-top: calc(50vh - (400px * .55)); } }
+    .marvel-comics-detail main::-webkit-scrollbar {
+      display: none; }
+    .marvel-comics-detail main p {
+      filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=70);
+      opacity: 0.7; }
+    .marvel-comics-detail main header {
+      max-width: 100%; }
+      @media (min-width: 900px) {
+        .marvel-comics-detail main header {
+          max-width: 85%; } }
+      .marvel-comics-detail main header .top p:first-of-type {
+        margin-bottom: 5px; }
+      @media (min-width: 1200px) {
+        .marvel-comics-detail main header .top {
+          display: -webkit-flex;
+          display: flex;
+          -webkit-align-items: flex-start;
+          align-items: flex-start;
+          -webkit-justify-content: space-between;
+          justify-content: space-between; }
+          .marvel-comics-detail main header .top p:first-of-type {
+            margin-bottom: 0; } }
+      .marvel-comics-detail main header .top h1 {
+        width: 75%;
+        margin-bottom: 20px; }
+    .marvel-comics-detail main h1 {
+      font-size: 36px;
+      line-height: 1; }
+      @media (min-width: 900px) {
+        .marvel-comics-detail main h1 {
+          font-size: 48px; } }
+    .marvel-comics-detail main h3 {
+      font-size: 24px;
+      margin-bottom: 20px; }
+    .marvel-comics-detail main .content {
+      width: 100%;
+      height: 100%;
+      margin-top: 40px;
+      overflow: hidden; }
+      @media (min-width: 900px) {
+        .marvel-comics-detail main .content {
+          max-width: 85%; } }
+      .marvel-comics-detail main .content .creators, .marvel-comics-detail main .content .characters {
+        margin-top: 40px; }
+      .marvel-comics-detail main .content .creators-wrapper,
+      .marvel-comics-detail main .content .characters-wrapper {
+        display: grid;
+        justify-content: center;
+        grid-row-gap: 40px;
+        grid-column-gap: 40px;
+        grid-template-columns: 1fr 1fr; }
+        .marvel-comics-detail main .content .creators-wrapper > div p,
+        .marvel-comics-detail main .content .characters-wrapper > div p {
+          margin-bottom: 5px; }
+        @media (min-width: 600px) {
+          .marvel-comics-detail main .content .creators-wrapper,
+          .marvel-comics-detail main .content .characters-wrapper {
+            grid-template-columns: 1fr 1fr; } }
+        @media (min-width: 1200px) {
+          .marvel-comics-detail main .content .creators-wrapper,
+          .marvel-comics-detail main .content .characters-wrapper {
+            grid-template-columns: 1fr 1fr 1fr; } }

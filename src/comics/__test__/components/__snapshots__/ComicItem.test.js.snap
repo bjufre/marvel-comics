@@ -1,0 +1,39 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`ComicItem renders all the correct properties 1`] = `
+<div
+  class="marvel-comics-comic-item"
+  title="Rawhide Kid #134"
+>
+  <a
+    href="/16961"
+  >
+    <div
+      class="comic-item-image"
+    >
+      <img
+        alt="Rawhide Kid"
+        src="http://i.annihil.us/u/prod/marvel/i/mg/b/40/image_not_available/portrait_uncanny.jpg"
+      >
+        
+      </img>
+    </div>
+    <h3
+      class="comic-item-title"
+      title="Rawhide Kid #134"
+    >
+      Rawhide Kid #134
+    </h3>
+    <div
+      class="comic-item-meta"
+    >
+      <p>
+        1960 - 1979
+      </p>
+      <p>
+        0$
+      </p>
+    </div>
+  </a>
+</div>
+`;

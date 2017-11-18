@@ -1,0 +1,43 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Header renders all the correct properties 1`] = `
+<div
+  class="marvel-header"
+>
+  <a
+    href="/"
+  >
+    <div
+      id="marvel-logo"
+    >
+      <img
+        alt="Marvel Comics"
+        src="/img/marvel-logo.svg"
+      >
+        
+      </img>
+    </div>
+  </a>
+</div>
+`;
+
+exports[`Header renders with the correct className 1`] = `
+<div
+  class="marvel-header detail"
+>
+  <a
+    href="/"
+  >
+    <div
+      id="marvel-logo"
+    >
+      <img
+        alt="Marvel Comics"
+        src="/img/marvel-logo.svg"
+      >
+        
+      </img>
+    </div>
+  </a>
+</div>
+`;

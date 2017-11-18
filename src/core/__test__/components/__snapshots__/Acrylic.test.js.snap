@@ -1,0 +1,123 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Acrylic renders all the correct properties 1`] = `
+<div
+  className="marvel-comics-acrylic"
+  style={
+    Object {
+      "height": "100%",
+      "position": "relative",
+      "width": "100%",
+    }
+  }
+>
+  <div
+    className="marvel-comics-acrylic__container"
+    style={
+      Object {
+        "background": "#000 url(http://i.annihil.us/u/prod/marvel/i/mg/b/40/image_not_available/portrait_uncanny.jpg) no-repeat center/100%",
+        "backgroundSize": "cover",
+        "height": "100%",
+        "overflow": "hidden",
+        "position": "absolute",
+        "width": "100%",
+      }
+    }
+  >
+    <div
+      className="marvel-comics-acrylic__before"
+      style={
+        Object {
+          "background": "#000 url(http://i.annihil.us/u/prod/marvel/i/mg/b/40/image_not_available/portrait_uncanny.jpg) no-repeat center/100%",
+          "backgroundBlendMode": "exclusion",
+          "backgroundSize": "cover",
+          "filter": "blur(25px)",
+          "height": "calc(100% + 75px)",
+          "left": "-33px",
+          "position": "absolute",
+          "top": "-25px",
+          "width": "calc(100% + 75px)",
+        }
+      }
+    />
+    <div
+      className="marvel-comics-acrylic__after"
+      style={
+        Object {
+          "backgroundColor": "rgba(0, 0, 0, .5)",
+          "backgroundImage": "url(\\"http://api.thumbr.it/whitenoise-361x370.png?background=ffffff00&noise=a0a0a0&density=35&opacity=10\\")",
+          "bottom": 0,
+          "boxShadow": "0 0 3px rgba(#000 .1)",
+          "height": "100%",
+          "left": 0,
+          "position": "absolute",
+          "right": 0,
+          "top": 0,
+          "width": "100%",
+        }
+      }
+    />
+  </div>
+</div>
+`;
+
+exports[`Acrylic renders without crashing 1`] = `
+<div
+  className="marvel-comics-acrylic"
+  style={
+    Object {
+      "height": "100%",
+      "position": "relative",
+      "width": "100%",
+    }
+  }
+>
+  <div
+    className="marvel-comics-acrylic__container"
+    style={
+      Object {
+        "background": "#000 url(http://i.annihil.us/u/prod/marvel/i/mg/b/40/image_not_available/portrait_uncanny.jpg) no-repeat center/100%",
+        "backgroundSize": "cover",
+        "height": "100%",
+        "overflow": "hidden",
+        "position": "absolute",
+        "width": "100%",
+      }
+    }
+  >
+    <div
+      className="marvel-comics-acrylic__before"
+      style={
+        Object {
+          "background": "#000 url(http://i.annihil.us/u/prod/marvel/i/mg/b/40/image_not_available/portrait_uncanny.jpg) no-repeat center/100%",
+          "backgroundBlendMode": "exclusion",
+          "backgroundSize": "cover",
+          "filter": "blur(25px)",
+          "height": "calc(100% + 75px)",
+          "left": "-33px",
+          "position": "absolute",
+          "top": "-25px",
+          "width": "calc(100% + 75px)",
+        }
+      }
+    />
+    <div
+      className="marvel-comics-acrylic__after"
+      style={
+        Object {
+          "backgroundColor": "rgba(0, 0, 0, .5)",
+          "backgroundImage": "url(\\"http://api.thumbr.it/whitenoise-361x370.png?background=ffffff00&noise=a0a0a0&density=35&opacity=10\\")",
+          "bottom": 0,
+          "boxShadow": "0 0 3px rgba(#000 .1)",
+          "height": "100%",
+          "left": 0,
+          "position": "absolute",
+          "right": 0,
+          "top": 0,
+          "width": "100%",
+        }
+      }
+    />
+  </div>
+</div>
+`;
