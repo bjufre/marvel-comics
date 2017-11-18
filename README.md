@@ -19,7 +19,7 @@ we can encounter that we don't get back all the "results" available in the API.
 It's because of this that we perform as "many ajax requests" as we need until we have all the necessary data.
 And not only that but because the use of Observables we get "cancellation" of ajax requests for free.
 
-**NOTE:** In order to not lose that much time when styling, in this project we use some of the latest CSS specifications, like *CSS Grids*. It's because of this, that this app has been optimized to run **only on the latest versions of Google Chrome & Safari**.
+**NOTE:** In order to not lose that much time when styling, in this project we use some of the latest CSS specifications, like *CSS Grids*. It's because of this, that this app has been optimized to run **mainly on the latest versions of Google Chrome & Safari**.
 
 ###### This project was created with [Create React App](https://github.com/facebookincubator/create-react-app) in order to take full advantage of its simplicity.
 
