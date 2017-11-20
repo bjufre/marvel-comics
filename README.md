@@ -63,3 +63,7 @@ npm run test
 # Yarn users:
 yarn test
 ```
+
+### Improvements / TODO(s):
+- [ ] Add `Error Component` taking advantage of React Error Boundaries.
+- [ ] Add `PropTypes` to be sure.
